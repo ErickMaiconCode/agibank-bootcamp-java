@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class caixaeletronico {
+public class exerciciocaixaeletronico {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
