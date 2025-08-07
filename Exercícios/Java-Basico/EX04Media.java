@@ -11,7 +11,9 @@ public class EX04Media {
         System.out.println("Qual o número para comparativo?");
         float num = scanner.nextFloat();
 
-        float diferenca = (num/media)*100;
-        System.out.println("O valor está " + diferenca + "% próximo da média ");
+        float diferenca = num - media;
+        float percentual = (diferenca/media)*100;
+        System.out.println("O valor está " + percentual + "% próximo da média ");
+
     }
 }
