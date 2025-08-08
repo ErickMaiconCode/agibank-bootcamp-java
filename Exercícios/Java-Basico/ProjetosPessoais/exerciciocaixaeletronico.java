@@ -1,3 +1,5 @@
+package ProjetosPessoais;
+
 import java.util.Scanner;
 
 public class exerciciocaixaeletronico {

@@ -1,3 +1,5 @@
+package EstruturaBasica;
+
 import java.util.Scanner;
 
 public class EX05AproRepro {
