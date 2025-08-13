@@ -1,5 +1,9 @@
 package Vetores.Bidimensionais;
-
+/*
+Crie um método que calcule a média geral de vendas numa matriz 3x3 e outro que calcule a soma total de vendas por vendedor (soma das linhas).
+double calcularMediaTotal(double[][] matriz);
+double[] somarVendasPorVendedor(double[][] matriz);
+ */
 import java.util.Arrays;
 
 public class EX05MediaGeralVendas {

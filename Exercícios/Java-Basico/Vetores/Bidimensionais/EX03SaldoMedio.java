@@ -1,5 +1,9 @@
 package Vetores.Bidimensionais;
-
+/*
+Crie um método que calcule o total de saldos de uma matriz 3x2 (clientes x meses) e outro método que calcule o saldo médio por cliente (média das linhas).
+double calcularSaldoTotal(double[][] matriz);
+double[] calcularMediaPorCliente(double[][] matriz)
+ */
 public class EX03SaldoMedio {
     public static double calcularSaldoTotal(double[][] matriz){
         double total = 0.0;

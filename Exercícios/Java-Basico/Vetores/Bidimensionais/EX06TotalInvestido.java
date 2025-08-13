@@ -1,5 +1,8 @@
 package Vetores.Bidimensionais;
-
+/*
+Dada uma matriz 3x2 com valores investidos em fundos durante 2 trimestres, crie um método que calcule o total investido em cada fundo (soma das linhas).
+double[] calcularTotalPorFundo(double[][] matriz);
+ */
 import java.util.Arrays;
 
 public class EX06TotalInvestido {

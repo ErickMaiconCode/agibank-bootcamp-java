@@ -1,5 +1,8 @@
 package Vetores.Bidimensionais;
-
+/*
+Dada uma matriz 3x2 com quantidade de produtos vendidos por vendedor e mês, crie um método para somar o total vendido por mês (soma das colunas).
+int[] somarVendasPorMes(int[][] matriz);
+ */
 import java.util.Arrays;
 
 public class EX08TotalVendidoMes {

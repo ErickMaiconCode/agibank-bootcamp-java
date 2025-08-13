@@ -1,5 +1,9 @@
 package Vetores.Bidimensionais;
-
+/*
+Crie um método que encontre a menor taxa de juros numa matriz 2x2 e outro que calcule a média das taxas por mês (média das colunas).
+double encontrarMenorTaxa(double[][] matriz);
+double[] calcularMediaPorMes(double[][] matriz);
+ */
 import java.lang.reflect.Array;
 import java.util.Arrays;
 

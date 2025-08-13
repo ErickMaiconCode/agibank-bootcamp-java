@@ -1,19 +1,24 @@
 package Vetores.Bidimensionais;
-
+/*
+Dada uma matriz 2x3 com preços de produtos em 2 lojas, crie um método para encontrar o menor preço de cada produto (mínimo por coluna).
+double[] encontrarMenorPrecoPorProduto(double[][] matriz);
+ */
 import java.util.Arrays;
 
 public class EX04MenorValor {
     public static double [] encontrarMenorValor(double [][] Matriz) {
         double[] menoresprecos = new double[Matriz[0].length];
 
-        for (int i = 0; i < Matriz[0].length; i++) {
-            double menorpreçocoluna = Matriz[0][i];
-            for (int j = 0; j < Matriz.length; j++) {
-                if (Matriz[j][i] < menorpreçocoluna) {
-                    menorpreçocoluna = Matriz[j][i];
+        for (int p = 0; p < Matriz[0].length; p++) {
+            double menorpreçocoluna = Matriz[0][p];
+
+            for (int l = 0; l < Matriz.length; l++) {
+
+                if (Matriz[l][p] < menorpreçocoluna) {
+                    menorpreçocoluna = Matriz[l][p];
                 }
             }
-            menoresprecos[i] = menorpreçocoluna;
+            menoresprecos[p] = menorpreçocoluna;
         }
         return menoresprecos;
     }

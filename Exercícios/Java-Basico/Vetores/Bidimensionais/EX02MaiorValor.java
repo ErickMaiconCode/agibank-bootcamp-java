@@ -1,5 +1,8 @@
 package Vetores.Bidimensionais;
-
+/*
+Dada uma matriz 3x4 que representa dívidas mensais de 3 clientes em 4 meses, crie um método para encontrar o maior valor da matriz.
+double encontrarMaiorValor(double[][] matriz);
+ */
 public class EX02MaiorValor {
     public static double encontrarMaiorValor(double[][] matriz) {
         double maiorvalor = matriz[0][0];
