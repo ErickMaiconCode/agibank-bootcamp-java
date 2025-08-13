@@ -1,4 +1,4 @@
-package Vetores;
+package Vetores.Unidimensionais;
 
 public class EX05PrevJurosCompostos {
     public static double[] calcularJurosCompostos(double valorInicial, double taxa, int meses){

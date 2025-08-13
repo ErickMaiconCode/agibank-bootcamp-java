@@ -1,4 +1,4 @@
-package Vetores;
+package Vetores.Unidimensionais;
 
 public class EX03SimulaçãoDeCarteira {
     public static double totalInvestido(double[] carteira) {

@@ -1,4 +1,4 @@
-package Vetores;
+package Vetores.Unidimensionais;
 
 public class EX04CalcImpostoSobreCapital {
     public static double [] lucroPorAtivo(double[] compra, double[] venda){

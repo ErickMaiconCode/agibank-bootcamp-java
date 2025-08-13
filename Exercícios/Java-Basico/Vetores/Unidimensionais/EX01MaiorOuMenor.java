@@ -1,4 +1,4 @@
-package Vetores;
+package Vetores.Unidimensionais;
 
 public class EX01MaiorOuMenor {
     public static double maiorPreço(double [] preço) {

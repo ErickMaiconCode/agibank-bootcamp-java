@@ -1,4 +1,4 @@
-package Vetores;
+package Vetores.Unidimensionais;
 
 public class EX02VariacaoDiaria {
     public static double [] variacaoDiaria(double[] precos){
