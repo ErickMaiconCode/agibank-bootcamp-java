@@ -1,6 +1,4 @@
-package POO.Exercícios;
-
-import java.util.Scanner;
+package POO.ClassesObjetos;
 
 public class Produto {
     public String nome;

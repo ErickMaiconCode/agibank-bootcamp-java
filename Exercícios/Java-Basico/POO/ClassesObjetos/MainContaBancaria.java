@@ -1,4 +1,4 @@
-package POO.Exercícios;
+package POO.ClassesObjetos;
 
 public class MainContaBancaria {
     public static void main(String[] args) {
