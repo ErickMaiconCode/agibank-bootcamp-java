@@ -6,6 +6,6 @@ public class MainCartões {
         CartaoDePagamento c2 = new CartaoDeDebito(13, 1200, 1400);
 
         c1.processarCompra(1401);
-        c2.processarCompra(1401);
+        c2.processarCompra(1400);
     }
 }
