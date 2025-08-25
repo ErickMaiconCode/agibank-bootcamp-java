@@ -5,5 +5,6 @@ public class LCI extends Investimento {
     public double calcularRetornoAnual() {
         double valorRendimento = valorAplicado * taxaRendimentoAnual;
         System.out.println("Valor de rendimento foi de R$ " + valorRendimento);
+        return valorRendimento;
     }
 }
