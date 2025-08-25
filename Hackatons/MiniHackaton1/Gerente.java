@@ -13,8 +13,8 @@ public class Gerente extends Funcionário {
     }
 
     //Método para acréscimo de bônus.
-    public double salarioFinal() {
-        return setSalario(getSalario() + bonus);
+    public void salarioFinal(){
+        setSalario(getSalario()+bonus);
     }
 
 }

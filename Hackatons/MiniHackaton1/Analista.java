@@ -7,13 +7,18 @@ public class Analista extends Funcionário {
         this.bonus = 1000;
     }
 
+    @Override
+    public void setSalario(double salario) {
+        super.setSalario(salario);
+    }
+
     public double getBonus() {
         return bonus;
     }
 
     //Método para acréscimo de bônus.
-    public double salarioFinal(){
-        return setSalario(getSalario()+bonus);
+    public void salarioFinal(){
+        setSalario(getSalario()+bonus);
     }
 
 }
