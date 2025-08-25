@@ -1,43 +1,44 @@
 package ExercicioAplicadoVarejo;
 
-public abstract class Produto implements OperaçõesProduto{
-    private int codigo;
-    private String nome;
-    private String ClienteComprador;
-    private double preco;
+ abstract class Produto implements OperacoesProduto{
+     private int codigo;
+     private String nome;
+     private double preco;
+     private String clienteComprador;
 
-    public Produto(int codigo, String nome, String clienteComprador, double preco) {
-        this.codigo = codigo;
-        this.nome = nome;
-        this.ClienteComprador = clienteComprador;
-        this.preco = preco;
-    }
+     public Produto(int codigo, String nome, double preco, String clienteComprador) {
+         this.codigo = codigo;
+         this.nome = nome;
+         this.preco = preco;
+         this.clienteComprador = clienteComprador;
+     }
 
-    public double getPreco(){
-        return preco;
-    }
+     public double getPreco() {
+         return preco;
+     }
 
-    protected void setPreco(double preco) {
-        this.preco = preco;
-    }
+     public void setPreco(double preco) {
+         this.preco = preco;
+     }
 
-    @Override
-    public void aplicarDesconto(double percentual){
-        if(preco > 0){
-            setPreco(getPreco()+getPreco()*percentual);
-        }
-        else{
-            System.out.println("Valor de produto inválido.");
-        }
-    }
-
-    public void aumentarPreco(double percentual){
-        if(preco > 0){
-            setPreco(getPreco()+getPreco()+percentual);
-        }
-        else{
-            System.out.println("Valor de produto inválido.");
-        }
-    }
+     public void aplicarDesconto(double percentual){
+         if(this.preco > 0 && percentual > 0){
+             setPreco(getPreco() - getPreco()*((percentual)/100));
+             System.out.println("\nDesconto aplicado em " + percentual + " % de desconto. Preço final de R$ " + getPreco());
+         }
+         else {
+             System.out.println("\nPreço ou desconto percentual inválido.");
+         }
+     }
+     public void aumentarPreco(double percentual){
+         if(this.preco > 0 && percentual > 0){
+             setPreco(getPreco() + getPreco()*((percentual)/100));
+             System.out.println("\nAumento aplicado em " + percentual + " % de desconto. Preço final de R$ " + getPreco());
+         }
+         else {
+             System.out.println("\nPreço ou desconto percentual inválido.");
+         }
+     }
+     public void calcularFrete(){}
 
 }
