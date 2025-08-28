@@ -11,10 +11,8 @@ public class HistoricoTransações {
         return historico.contains(transacao);
     }
 
-    public void exibirHistorico(List<String> historico){
+    public static void exibirHistorico(List<String> historico){
         historico.forEach(System.out::println);
-
-        list.forEach(x -> System.out.println(x));
     }
 
     public static void main(String[] args) {
@@ -25,6 +23,7 @@ public class HistoricoTransações {
         registrarTransacao(historico, "125");
 
         buscarTransacao(historico, "124");
+        exibirHistorico(historico);
 
     }
 }
